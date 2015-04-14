@@ -1,0 +1,13 @@
+---
+title: "Tableau/R Project 2: US Universities Directory and Enrollment Data"
+output: html_document
+---
+Rhoda Jiao and Maytee Chantharayukhont
+
+```{r, warning = FALSE}
+source("../01 SQL Crosstabs/libraries.R", echo = TRUE)
+source("../01 SQL Crosstabs/universitydata.R", echo = TRUE)
+```
+<img src="../00 Doc/rank.png" />
+<img src="../00 Doc/maxDiff.png" />
+
