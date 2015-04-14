@@ -451,13 +451,10 @@
             </column>
             <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
             </column>
-            <column caption='Unit ID' datatype='real' name='[UNITID (ENROLLMENT)]' role='measure' type='quantitative'>
-            </column>
             <column-instance column='[CITY]' derivation='None' name='[none:CITY:nk]' pivot='key' type='nominal' />
             <column-instance column='[FULLTIMEENTERING2013]' derivation='None' name='[none:FULLTIMEENTERING2013:ok]' pivot='key' type='ordinal' />
             <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
             <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
-            <column-instance column='[UNITID (ENROLLMENT)]' derivation='None' name='[none:UNITID (ENROLLMENT):qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation2]' derivation='User' name='[usr:Calculation2:qk:2]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Field'>
                 <order field='[oracle.42106.977243668982].[FULLTIMEENTERING2013]' />
@@ -473,10 +470,7 @@
             </groupfilter>
           </filter>
           <sort class='natural' column='[oracle.42106.977243668982].[none:FULLTIMEENTERING2013:ok]' direction='DESC' />
-          <filter class='quantitative' column='[oracle.42106.977243668982].[none:UNITID (ENROLLMENT):qk]' included-values='all'>
-          </filter>
           <slices>
-            <column>[oracle.42106.977243668982].[none:UNITID (ENROLLMENT):qk]</column>
             <column>[oracle.42106.977243668982].[none:FULLTIMEENTERING2013:ok]</column>
           </slices>
           <aggregation value='false' />
@@ -510,7 +504,7 @@
   </worksheets>
   <windows>
     <window class='schema' source-height='21' />
-    <window auto-hidden='0' class='worksheet' maximized='1' name='nth'>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='nth'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -537,7 +531,7 @@
         </color-one-way>
       </highlight>
     </window>
-    <window auto-hidden='0' class='worksheet' maximized='0' name='cume_dist'>
+    <window auto-hidden='0' class='worksheet' maximized='1' name='cume_dist'>
       <cards>
         <edge name='left'>
           <strip size='160'>
