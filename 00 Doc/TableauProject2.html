@@ -94,10 +94,6 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 ## 
 ## Attaching package: 'jsonlite'
 ## 
-## The following objects are masked from 'package:rjson':
-## 
-##     fromJSON, toJSON
-## 
 ## The following object is masked from 'package:utils':
 ## 
 ##     View</code></pre>
@@ -107,6 +103,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 ## +     &quot; &quot;, &quot;129.152.144.84:5001/rest/native/?query=\&quot;select * from UNIVERSITYDATA \ .... [TRUNCATED] 
 ## 
 ## &gt; options(dplyr.width = Inf)
+## 
+## &gt; print(&quot;States Ranked by Entering Full Time University Students in 2013&quot;)
+## [1] &quot;States Ranked by Entering Full Time University Students in 2013&quot;
 ## 
 ## &gt; rankdf &lt;- data.frame(fromJSON(getURL(URLencode(gsub(&quot;\n&quot;, 
 ## +     &quot; &quot;, &quot;129.152.144.84:5001/rest/native/?query=\n\&quot;select STATE, EnrollTotals,rank()  .... [TRUNCATED] 
@@ -126,6 +125,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 ## 9     MI        72403    9
 ## 10    GA        69922   10
 ## ..   ...          ...  ...
+## 
+## &gt; print(&quot;Maximum Total Entering Class of 2013 For Each University System in Texas&quot;)
+## [1] &quot;Maximum Total Entering Class of 2013 For Each University System in Texas&quot;
 ## 
 ## &gt; maxdiffdf &lt;- data.frame(fromJSON(getURL(URLencode(gsub(&quot;\n&quot;, 
 ## +     &quot; &quot;, &quot;129.152.144.84:5001/rest/native/?query=\n\&quot;select STATE, SYSTEMNAME, NAME, .... [TRUNCATED] 
@@ -170,6 +172,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 ## 10               712              7287               6575
 ## ..               ...               ...                ...
 ## 
+## &gt; print(&quot;Largest Full Time Entering Class in 2013 by State&quot;)
+## [1] &quot;Largest Full Time Entering Class in 2013 by State&quot;
+## 
 ## &gt; nthdf &lt;- data.frame(fromJSON(getURL(URLencode(gsub(&quot;\n&quot;, 
 ## +     &quot; &quot;, &quot;129.152.144.84:5001/rest/native/?query=\n\&quot;SELECT state, city, name, fulltimee .... [TRUNCATED] 
 ## 
@@ -200,6 +205,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 ## 9                   470         6428
 ## 10                  410         6428
 ## ..                  ...          ...
+## 
+## &gt; print(&quot;Cumulative Percentage of Full Time Entering Class Size in 2013 by State&quot;)
+## [1] &quot;Cumulative Percentage of Full Time Entering Class Size in 2013 by State&quot;
 ## 
 ## &gt; cumedistdf &lt;- data.frame(fromJSON(getURL(URLencode(gsub(&quot;\n&quot;, 
 ## +     &quot; &quot;, &quot;129.152.144.84:5001/rest/native/?query=\n\&quot;SELECT state, city, name, full .... [TRUNCATED] 
